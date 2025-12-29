@@ -33,9 +33,33 @@ export default function HeroSection({ profile, links, onProjects, onContact }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-2 text-xs text-black/70 shadow-[0_1px_0_rgba(0,0,0,0.04)]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[hsl(var(--neon))]" />
-            White AI aesthetic • Neon accents (sparing)
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-2 text-xs text-black/70 shadow-[0_1px_0_rgba(0,0,0,0.04)]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[hsl(var(--neon))]" />
+              White AI aesthetic • Neon accents (sparing)
+            </div>
+
+            {/* Profile photo placeholder (kept subtle, recruiter-friendly) */}
+            <div className="flex items-center gap-3">
+              <Avatar className="h-11 w-11 rounded-2xl ring-1 ring-black/10">
+                {/* imageUrl is optional; placeholder is the default */}
+                {profile.imageUrl ? (
+                  <AvatarImage src={profile.imageUrl} alt={`${profile.name} profile photo`} />
+                ) : null}
+                <AvatarFallback className="rounded-2xl bg-[linear-gradient(135deg,rgba(0,0,0,0.06),rgba(0,0,0,0.02))] text-xs font-medium text-black/70">
+                  {profile.name
+                    .split(" ")
+                    .filter(Boolean)
+                    .slice(0, 2)
+                    .map((s) => s[0])
+                    .join("")}
+                </AvatarFallback>
+              </Avatar>
+              <div className="leading-tight">
+                <p className="text-sm font-medium text-black">{profile.name}</p>
+                <p className="text-xs text-black/60">{profile.title}</p>
+              </div>
+            </div>
           </div>
 
           <h1 className="mt-6 text-4xl font-light tracking-[-0.04em] text-black md:text-[56px] md:leading-[1.03]">
