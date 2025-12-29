@@ -53,7 +53,7 @@ code {
         --chart-4: 43 74% 66%;
         --chart-5: 27 87% 67%;
         --radius: 0.75rem;
-        --neon: 153 96% 52%;
+        --neon: 153 96% 52%; /* neon green accent */
     }
     .dark {
         --background: 0 0% 3.9%;
