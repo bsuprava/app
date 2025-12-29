@@ -3,6 +3,8 @@
 export const mockProfile = {
   name: "Anita Panda",
   title: "AI Engineer / Full‑Stack Developer (.NET + AI)",
+  // Optional: set to a real headshot URL later. Keep null for placeholder.
+  imageUrl: null,
   headline: "Building Intelligent Systems with AI, LLMs & Agentic Architectures",
   subheadline:
     "AI Engineer specializing in RAG pipelines, LLM orchestration, MLOps, and scalable AI platforms.",
