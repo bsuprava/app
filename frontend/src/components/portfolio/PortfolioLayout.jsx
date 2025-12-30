@@ -60,7 +60,7 @@ export function PortfolioHeader({ profileName, sections, onNav, onContact }) {
             <div className="text-sm font-medium tracking-tight">
               {profileName}
             </div>
-            <div className="text-xs text-black/60">AI Engineer</div>
+            <div className="text-xs text-black/60">Full Stack IT Professional</div>
           </div>
         </a>
 

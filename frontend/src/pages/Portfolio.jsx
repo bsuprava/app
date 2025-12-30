@@ -37,12 +37,12 @@ export default function Portfolio() {
       { id: "projects", label: "Works" },
       { id: "skills", label: "Skills" },
       { id: "experience", label: "Experience" },
-      { id: "blog", label: "Insights" },
-      { id: "contact", label: "Contact" },
+      { id: "blog", label: "Insights" }      
     ],
     [],
   );
 
+  {/*,{ id: "contact", label: "Contact" }, */}
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (!el) return;

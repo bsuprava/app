@@ -78,6 +78,7 @@ export default function HeroSection({ profile, links, onProjects, onContact }) {
               View Projects
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+            {/* 
             <Button
               variant="outline"
               className="rounded-xl border-black/15 bg-white text-black transition-colors hover:bg-black hover:text-white"
@@ -85,6 +86,8 @@ export default function HeroSection({ profile, links, onProjects, onContact }) {
             >
               Contact Me
             </Button>
+             */}
+            
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3">

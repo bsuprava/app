@@ -4,12 +4,14 @@ import {
   ArrowRight,
   BookOpen,
   Briefcase,
+  Building,
   ChevronRight,
   Code,
   ExternalLink,
   Github,
   Layers,
   Linkedin,
+  GraduationCap
   Mail,
   Menu,
   Sparkles,
@@ -227,7 +229,7 @@ export default function PortfolioLanding() {
               <div className="text-sm font-medium tracking-tight">
                 {mockProfile.name}
               </div>
-              <div className="text-xs text-black/60">AI Engineer</div>
+              <div className="text-xs text-black/60"> Full-Stack IT Professional</div>
             </div>
           </a>
 
@@ -242,7 +244,7 @@ export default function PortfolioLanding() {
                 }}
                 className="text-sm text-black/70 transition-colors hover:text-black"
               >
-                {s.label}
+                {s.label}AI
               </a>
             ))}
             <Button
@@ -349,6 +351,7 @@ export default function PortfolioLanding() {
               <div className="mt-8 flex flex-wrap gap-2">
                 <PillLink href={mockLinks.linkedin} icon={Linkedin} label="LinkedIn" />
                 <PillLink href={mockLinks.github} icon={Github} label="GitHub" />
+                <PillLink href={mockLinks.projects} icon={GraduationCap} label="Projects" />
                 <PillLink href={`mailto:${mockLinks.email}`} icon={Mail} label="Email" />
               </div>
             </motion.div>
@@ -856,6 +859,18 @@ export default function PortfolioLanding() {
                   <span className="inline-flex items-center gap-2">
                     <Github className="h-4 w-4" />
                     GitHub
+                  </span>
+                  <ExternalLink className="h-4 w-4 opacity-60" />
+                </a>
+                <a
+                  href={mockLinks.projects}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between rounded-xl border border-black/10 bg-white px-4 py-3 text-sm text-black/75 transition-colors hover:border-black/20"
+                >
+                  <span className="inline-flex items-center gap-2">
+                    <GraduationCap className="h-4 w-4" />
+                   ML Projects
                   </span>
                   <ExternalLink className="h-4 w-4 opacity-60" />
                 </a>

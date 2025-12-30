@@ -1,13 +1,13 @@
 // MOCKED data layer (frontend-only). Replace with backend API integration later.
 
 export const mockProfile = {
-  name: "Anita Panda",
-  title: "AI Engineer / Full‑Stack Developer (.NET + AI)",
+  name: "Suprava Barik",
+  title: "Full‑Stack IT Professional (.NET + AI)",
   // Optional: set to a real headshot URL later. Keep null for placeholder.
   imageUrl: null,
-  headline: "Building Intelligent Systems with AI, LLMs & Agentic Architectures",
+  headline: "Building Robust, Scalable, Intelligent and Distributed Systems.",
   subheadline:
-    "AI Engineer specializing in RAG pipelines, LLM orchestration, MLOps, and scalable AI platforms.",
+    "A Full-Stack IT professional specializing in .Net, React, and AI platforms with LLM, RAG, MLOps.",
   trustBadges: [
     { label: "AI-first", value: "RAG • Agents • MLOps" },
     { label: "Stack", value: ".NET • Python • Cloud" },
@@ -23,9 +23,10 @@ export const mockProfile = {
 };
 
 export const mockLinks = {
-  email: "anita.panda@example.com",
-  linkedin: "https://www.linkedin.com/in/anita-panda",
-  github: "https://github.com/anita-panda",
+  email: "sbarikdotnetar1@gmail.com",
+  linkedin: "https://www.linkedin.com/in/supravabarik",
+  github: "https://github.com/bsuprava",
+  projects: "https://www.mygreatlearning.com/eportfolio/suprava-barik",
   resume: "#",
 };
 
@@ -58,8 +59,16 @@ export const mockSkills = [
     ],
   },
   {
+    category: "AI Tools",
+    items: ["LLama", "SKLearn", "HuggingFace", "StreamLit", "Flask","Jupiter Notebook","Google Colab", "Kaggle"],
+  },
+  {
+    category: "Cloud Services",
+    items: ["OpenShift", "Azure App Service", "Azure Functions", "Azure Service Bus", "Azure CosmosDB"],
+  },
+  {
     category: "Programming",
-    items: ["Python", ".NET", "SQL", "FastAPI / Web APIs"],
+    items: ["Python", ".NET", "SQL", "Web APIs", "TypeScript"],
   },
 ];
 
@@ -175,17 +184,29 @@ export const mockExperience = [
 
 export const mockCertifications = [
   {
-    id: "cert-az900",
-    name: "Microsoft Azure Fundamentals (AZ‑900)",
-    issuer: "Microsoft",
+    id: "cert-ai",
+    name: "Post Graduate Program in Artificial Intelligence and Machine Learning",
+    issuer: "Greate Learning-University of Austin",
+    year: "2025",
+  },
+  {
+    id: "cert-netang",
+    name: "Microsoft .NET Full-Stack + Angular",
+    issuer: "IBM",
     year: "2024",
   },
   {
-    id: "cert-ai",
-    name: "Applied Generative AI (Sample)",
-    issuer: "Provider",
-    year: "2025",
+    id: "cert-bankdomain",
+    name: "Banking Industry Domain Knowledge Certification",
+    issuer: "IBM",
+    year: "2023",
   },
+  {
+    id: "cert-az900",
+    name: "Microsoft Azure Fundamentals (AZ‑900)",
+    issuer: "Microsoft",
+    year: "2022",
+  }
 ];
 
 export const mockBlogPosts = [

@@ -1,5 +1,6 @@
 import React from "react";
 import { Sparkles, ShieldCheck } from "lucide-react";
+import profilePic from '../imgs/profile-pic2.jpg';
 
 export default function ProfileFrame() {
   return (
@@ -28,10 +29,10 @@ export default function ProfileFrame() {
 
         <div className="mt-6 grid place-items-center rounded-2xl border border-dashed border-black/15 bg-white p-10">
           <div className="text-center">
-            <div className="mx-auto h-24 w-24 rounded-2xl bg-[linear-gradient(135deg,rgba(0,0,0,0.06),rgba(0,0,0,0.02))] shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]" />
-            <p className="mt-4 text-sm font-medium text-black">Headshot placeholder</p>
+            <img src={profilePic} alt="Profile Headshot" className="mx-auto h-24 w-24 rounded-2xl object-cover shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]" />
+            <p className="mt-4 text-sm font-medium text-black">Headshot</p>
             <p className="mt-1 text-xs text-black/60">
-              Swap with your photo later
+              Suprava Barik
             </p>
           </div>
         </div>
